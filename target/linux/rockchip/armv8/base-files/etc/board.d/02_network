@@ -108,6 +108,7 @@ rockchip_setup_macs()
 	ezpro,mrkaio-m68s-plus|\
 	fastrhino,r66s|\
 	fastrhino,r68s|\
+	alark35,3500|\
 	firefly,rk3568-roc-pc|\
 	friendlyarm,nanopc-t6|\
 	friendlyarm,nanopi-r2c|\
