@@ -125,6 +125,18 @@ $(call Device/fastrhino_common)
 endef
 TARGET_DEVICES += fastrhino_r68s
 
+define Device/alark35_3500
+  DEVICE_VENDOR := 3568
+  DEVICE_MODEL := ALARK35 3500
+  SOC := rk3568
+  DEVICE_DTS := rockchip/rk3568-alark35-3500
+  SUPPORTED_DEVICES := alark35,3500
+  UBOOT_DEVICE_NAME := generic-rk3568
+  IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
+  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-nvme kmod-scsi-core kmod-hwmon-pwmfan kmod-thermal
+endef
+TARGET_DEVICES += alark35_3500
+
 define Device/friendlyarm_nanopc-t4
   DEVICE_VENDOR := FriendlyARM
   DEVICE_MODEL := NanoPC T4
