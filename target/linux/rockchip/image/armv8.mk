@@ -172,7 +172,7 @@ define Device/friendlyarm_nanopi-r2c
   SOC := rk3328
   UBOOT_DEVICE_NAME := nanopi-r2c-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += friendlyarm_nanopi-r2c
 
@@ -182,7 +182,7 @@ define Device/friendlyarm_nanopi-r2c-plus
   SOC := rk3328
   UBOOT_DEVICE_NAME := nanopi-r2c-plus-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += friendlyarm_nanopi-r2c-plus
 
@@ -192,7 +192,7 @@ define Device/friendlyarm_nanopi-r2s
   SOC := rk3328
   UBOOT_DEVICE_NAME := nanopi-r2s-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += friendlyarm_nanopi-r2s
 
@@ -202,7 +202,7 @@ define Device/friendlyarm_nanopi-r2s-plus
   SOC := rk3328
   UBOOT_DEVICE_NAME := nanopi-r2s-plus-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-gpio-button-hotplug kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += friendlyarm_nanopi-r2s-plus
 
@@ -481,7 +481,7 @@ define Device/rumu3f_fine-3399
   UBOOT_DEVICE_NAME := fine3399-rk3399
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
   DEVICE_PACKAGES := brcmfmac-firmware-43430b0-sdio brcmfmac-nvram-43430b0-sdio \
-	kmod-brcmfmac kmod-gpio-button-hotplug kmod-usb-net-rtl8152 wpad
+	kmod-brcmfmac kmod-gpio-button-hotplug kmod-usb-net-rtl8152-vendor wpad
 endef
 TARGET_DEVICES += rumu3f_fine-3399
 
@@ -519,7 +519,7 @@ define Device/seewo_sv21
   DEVICE_DTS := rockchip/rk3568-seewo-sv21
   UBOOT_DEVICE_NAME := generic-rk3568
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-img | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-usb-net-rtl8152 kmod-ata-ahci-dwc
+  DEVICE_PACKAGES := kmod-usb-net-rtl8152-vendor kmod-ata-ahci-dwc
 endef
 TARGET_DEVICES += seewo_sv21
 
@@ -569,7 +569,7 @@ define Device/xunlong_orangepi-r1-plus
   SOC := rk3328
   UBOOT_DEVICE_NAME := orangepi-r1-plus-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += xunlong_orangepi-r1-plus
 
@@ -579,7 +579,7 @@ define Device/xunlong_orangepi-r1-plus-lts
   SOC := rk3328
   UBOOT_DEVICE_NAME := orangepi-r1-plus-lts-rk3328
   IMAGE/sysupgrade.img.gz := boot-common | boot-script | pine64-bin | gzip | append-metadata
-  DEVICE_PACKAGES := kmod-usb-net-rtl8152
+  DEVICE_PACKAGES := kmod-usb-net-rtl8152-vendor
 endef
 TARGET_DEVICES += xunlong_orangepi-r1-plus-lts
 
